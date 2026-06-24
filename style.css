@@ -1,3 +1,18 @@
+body{
+    background-image: url(https://i.redd.it/54obu7eenrq61.gif);
+    color: rgb(252, 251, 251);
+}
+@font-face {
+    font-family: myFont;
+    src: url(fonts/Persona5MenuFontPrototype-Regular.ttf);
+}
+@font-face {
+    font-family: secondaryFont;
+    src: url(fonts/p5hatty-1.ttf)
+}
+* {
+    font-family: myFont;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -47,17 +62,6 @@ nav ul li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-body{
-    background-image: url(https://i.redd.it/54obu7eenrq61.gif);
-    color: rgb(252, 251, 251);
-}
-@font-face {
-    font-family: myFont;
-    src: url(fonts/Persona5MenuFontPrototype-Regular.ttf);
-}
-* {
-    font-family: myFont;
 }
 #home img{
     max-width: 100%;
@@ -133,7 +137,7 @@ body{
     background-color: #e60012;
     color: #ffffff;
     padding: 40px;
-    max-width: 1000px;
+    max-width: 1100px;
     width: 100%;
     border: 4px solid #000000;
     box-shadow: 12px 12px 0px #000000;
@@ -145,10 +149,150 @@ body{
     margin-bottom: 15px;
     border-left: 4px solid #ffffff;
     width: 20%;
+    font-size: 2rem;
 }
 .about-card h2{
     background-color: #000000;
     padding: 15px;
     margin-bottom: 15px;
     border-left: 4px solid #ffffff;
+    font-size: 2rem;
+    font-family: secondaryFont;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 80px 20px;
+    box-sizing: border-box;
+}
+.phone-container{
+    background-color: #1a1a1a;
+    border: 6px solid #000000;
+    box-shadow: 15px 15px 0px #ff0000;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.phone-container .bubble{
+    font-family: secondaryFont;
+}
+.phone-header{
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 1px;
+    border-bottom: 4px solid #000000;
+}
+.chat-window{
+    padding: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+.message-incoming{
+    display:flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+.message-incoming .avatar{
+    background-color: #ff0000;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    border: 2px solid #ffffff;
+    transform: rotate(-5deg);
+    box-shadow: 2px 2px 0px #000000;
+}
+.sender{
+    color: #ff0000;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.message-incoming .bubble{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 16px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.4;
+    transform: rotate(-1deg);
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #ff0000;
+    position: relative;
+    max-width: 85%;
+}
+textarea{
+    font-family: secondaryFont;
+}
+input{
+    font-family: secondaryFont;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 8px;
+    width: 100%;
+    outline: none;
+    font-weight: 600;
+}
+.phone-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    border-top: 2px dashed #333;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    transform: skewX(-5deg);
+}
+.input-group label{
+    color: #ff0000;
+    font-weight: 900;
+    padding: 8px 12px;
+}
+.message-input{
+    display: flex;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    box-shadow: 4px 4px 0px #ff0000;
+    transform: rotate(1deg);
+}
+.message-input textarea{
+    background: transparent;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    height: 60px;
+    resize: none;
+    outline: none;
+    font-weight: 600;
+    color: #000000;
+}
+#send-btn{
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-left: 3px solid #000000;
+    font-weight: 900;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+#send-btn:hover{
+    background-color: #000000;
+    color: #ff0000;
 }
