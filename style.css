@@ -1,7 +1,7 @@
 /*sets the starry background*/
 body{
     background-image: url(https://i.redd.it/54obu7eenrq61.gif);
-    color: rgb(252, 251, 251);
+    color: #ffffff;
 }
 /*Sets up custom fonts*/
 @font-face {
@@ -116,7 +116,6 @@ nav ul li a:hover{
     width: 100%;
 }
 .hero-text h1{
-    color: #ffffff;
     background-color: #000000;
     padding: 10px 20px;
     font-size: 2.5rem;
@@ -129,7 +128,6 @@ nav ul li a:hover{
     display: inline-block;
 }
 .hero-text h2{
-    color: #ffffff;
     background-color: #000000;
     padding: 8px 15px;
     font-size: 1.2rem;
@@ -141,7 +139,6 @@ nav ul li a:hover{
 }
 .about-card{
     background-color: #e60012;
-    color: #ffffff;
     padding: 40px;
     max-width: 1100px;
     width: 100%;
@@ -187,7 +184,6 @@ nav ul li a:hover{
 }
 .phone-header{
     background-color: #ff0000;
-    color: #ffffff;
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
@@ -209,7 +205,6 @@ nav ul li a:hover{
 }
 .message-incoming .avatar{
     background-color: #ff0000;
-    color: #ffffff;
     width: 40px;
     height: 40px;
     display: flex;
@@ -246,7 +241,6 @@ input{
     font-family: secondaryFont;
     background: transparent;
     border: none;
-    color: #ffffff;
     padding: 8px;
     width: 100%;
     outline: none;
@@ -342,7 +336,6 @@ input{
 }
 .card-back{
     background-color: #e60012;
-    color: #ffffff;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
@@ -374,4 +367,119 @@ input{
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+}
+#projects h1{
+    background-color: #000000;
+    transform: rotate(-2deg);
+}
+#skills{
+    padding: 60px 20px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-title{
+    background-color: #e60012;
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+    transform: rotate(-3deg) skewX(-10deg);
+    border: 3px solid #ffffff;
+    box-shadow: 6px 6px 0px #e60012;
+    margin-bottom: 50px;
+}
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    width: 100%;
+}
+.skill-card{
+    position: relative;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 40px;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    transform: skewX(-15deg);
+    border: 3px solid #000000;
+    box-shadow: 5px 5px 0px #e60012;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+.skill-content{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 2;
+}
+.skill-number{
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #e60012;
+}
+.skill-name{
+    font-size: 1.4rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+/*Hover effect layer*/
+.skill-bg{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #e60012;
+    transition: left 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+/*Hover states*/
+.skill-card:hover{
+    color: #ffffff;
+    transform: skewX(-15deg) scale(1.05);
+    box-shadow: -5px 5px 0px #ffffff;
+}
+.skill-card:hover .skill-bg{
+    left: 0;
+}
+.skill-card:hover .skill-number{
+    color: #000000;
+}
+#skill-blurb{
+    margin-top: 40px;
+    background-color: #e60012;
+    padding: 20px 30px;
+    max-width: 600px;
+    width: 100%;
+    border: 3px solid #ffffff;
+    box-shadow: 8px 8px 0px #ffffff;
+    transform: rotate(-1deg) skewX(-10deg);
+    box-sizing: border-box;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#skill-blurb.is-active{
+    transform: rotate(-1deg) skewX(-10deg) translateY(0);
+}
+#blurb-text{
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transform: skewX(10deg);
+    margin: 0;
+}
+.skill-card.selected-skill{
+    background-color: #e60012;
+    color: #ffffff;
+    box-shadow: -5px 5px 0px #ffffff;
+}
+.skill-card.selected-skill .skill-number{
+    color: #000000;
 }
