@@ -474,6 +474,7 @@ input{
     letter-spacing: 0.5px;
     transform: skewX(10deg);
     margin: 0;
+    font-family: secondaryFont;
 }
 .skill-card.selected-skill{
     background-color: #e60012;

@@ -1,9 +1,9 @@
 // Skill text blurbs
 const skillDescriptions = {
   html: "The architectural foundation of my web interfaces, learned through Nextech.",
-  css: "Utilized to stylise layouts, utilizing modern responsive grids, flexbox configurations, and 3D animations.",
-  js: "The engine driving my front-end interactive features, routing asynchronous data layers, and managing web animations.",
-  cpp: "Certified Entry-Level Programmer. I lean into this for lower-level concepts, architectural engineering, and system control paradigms.",
+  css: "Utilized to stylise layouts, learned through Nextech.",
+  js: "The engine driving my front-end interactive features, learned through Nextech.",
+  cpp: "Certified Entry-Level Programmer, earned by passing the CPE from the C++ Institue.",
 };
 
 const skillCards = document.querySelectorAll(".skill-card");
