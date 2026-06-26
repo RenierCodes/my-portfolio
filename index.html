@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Renier's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <script defer src="main.js"></script>
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo">Renier's Portfolio</div>
+        <div class="logo">Renier Valdes</div>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact Me</a></li>
         </ul>
@@ -57,14 +57,52 @@
       </div>
     </section>
 
+    <!--Skills Section-->
+    <section id="skills" class="pages">
+      <h1>Skills</h1>
+      <div class="skills-grid">
+        <div class="skill-card">
+
+        </div>
+      </div>
+    </section>
+
     <!--Projects Section-->
     <section id="projects" class="pages">
-      <h2>Projects</h2>
+      <h1>Projects</h1>
       <div class="projects-grid">
-        <div class="project-card">
-          <img src="images/project1.png" alt="Project 1" />
-          <h3>Project 1</h3>
-          <p>Description of Project 1.</p>
+        <!--Project 1-->
+        <div class="card-wrapper">
+          <div class="card-inner">
+            <div class="card-face card-front">
+              <img class="tarot" src="images/P5_Fool_arcana_cooperation.webp" alt="Fool Arcana" />
+            </div>
+            <div class="card-face card-back">
+              <h2>Healthy Mind Healthy Life</h2>
+              <p>A web application for mental health awareness and resources built using HTML & CSS.</p>
+              <div class="project-links">
+                <a href="https://reniercodes.github.io/int-u2-project-starter-code-2/" target="_blank">Live Demo</a>
+                <a href="https://github.com/RenierCodes/int-u2-project-starter-code-2" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Project 2-->
+        <div class="card-wrapper">
+          <div class="card-inner">
+            <div class="card-face card-front">
+              <img class="tarot" src="images/P5_Magician_arcana_cooperation.webp" alt="Magician Arcana" />
+            </div>
+            <div class="card-face card-back">
+              <h2>Trip to GameStop</h2>
+              <p>A choose your adventure game web appliction built using HTML, CSS, & JavaScript.</p>
+              <div class="project-links">
+                <a href="https://reniercodes.github.io/int-u3-project-23-24-starter-code/" target="_blank">Live Demo</a>
+                <a href="https://github.com/RenierCodes/int-u3-project-23-24-starter-code" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -103,5 +141,6 @@
         </div>
       </div>
     </section>
+    <script src="main.js"></script>
   </body>
 </html>

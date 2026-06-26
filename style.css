@@ -1,7 +1,9 @@
+/*sets the starry background*/
 body{
     background-image: url(https://i.redd.it/54obu7eenrq61.gif);
     color: rgb(252, 251, 251);
 }
+/*Sets up custom fonts*/
 @font-face {
     font-family: myFont;
     src: url(fonts/Persona5MenuFontPrototype-Regular.ttf);
@@ -16,6 +18,7 @@ body{
 html {
     scroll-behavior: smooth;
 }
+/*Styles the header*/
 header{
     position: fixed;
     top: 0;
@@ -25,6 +28,7 @@ header{
     z-index: 1000;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
+/*Styles the nav bar*/
 nav{
     display: flex;
     justify-content: space-between;
@@ -51,10 +55,12 @@ nav ul li a:hover{
     color:#ff0000;
     transform: scale(1.1) rotate(-3deg);
 }
+/*Styles the logo*/
 .logo{
     color:black;
     font-size: 2rem;
 }
+/*Styles each page/section*/
 .pages{
     padding: 100px 20px;
     min-height: 100vh;
@@ -172,7 +178,7 @@ nav ul li a:hover{
     border: 6px solid #000000;
     box-shadow: 15px 15px 0px #ff0000;
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -295,4 +301,77 @@ input{
 #send-btn:hover{
     background-color: #000000;
     color: #ff0000;
+}
+/*Establishes 3D perspective space*/
+.card-wrapper{
+    background-color: transparent;
+    width: 240px;
+    height: 460px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+.card-wrapper:hover .card-inner{
+    transform: rotateY(180deg);
+}
+/*Physically rotates*/
+.card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+/*Base style for front & back*/
+.card-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 3px solid #000000;
+    box-shadow: 5px 5px 0px #ff0000;
+    box-sizing: border-box;
+}
+.card-front{
+    background-color: #000000;
+}
+.tarot{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-back{
+    background-color: #e60012;
+    color: #ffffff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.card-back h2{
+    font-size: 1.5rem;
+    background-color: #000000;
+    padding: 5px 10px;
+    transform: rotate(-2deg);
+}
+.card-back p{
+    font-size: 1rem;
+    background-color: #000000;
+    padding: 10px;
+    margin: 15px 0;
+    line-height: 1.4;
+    font-family: secondaryFont;
+}
+.projects-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
