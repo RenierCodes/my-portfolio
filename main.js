@@ -3,7 +3,7 @@ const skillDescriptions = {
   html: "The foundation of my web interfaces, learned through Nextech.",
   css: "Utilized to stylise layouts, learned through Nextech.",
   js: "Powering interactive buttons, learned through Nextech.",
-  cpp: "Certified Entry-Level Programmer, earned by passing the CPE from the C++ Institue.",
+  cpp: "Certified Entry-Level Programmer, earned by passing the CPE from the C++ Institute.",
 };
 
 const skillCards = document.querySelectorAll(".skill-card");
