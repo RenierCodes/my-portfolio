@@ -1,4 +1,11 @@
 /*sets the starry background*/
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body{
     background-image: url(https://i.redd.it/54obu7eenrq61.gif);
     color: #ffffff;
@@ -482,4 +489,106 @@ input{
 }
 .skill-card.selected-skill .skill-number{
     color: #000000;
+}
+/*Footer styling*/
+footer{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 40px 20px 20px 20px;
+    position: relative;
+    overflow: hidden;
+    border-top: 6px solid #000000;
+    box-sizing: border-box;
+}
+footer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -10%;
+    width: 40%;
+    height: 100%;
+    background-color: #e60012;
+    transform: skewX(-25deg);
+    z-index: 1;
+}
+.footer-content{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    z-index: 2;
+}
+.footer-logo{
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -1px;
+    transform: rotate(-2deg) skewX(-10deg);
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 15px;
+    margin: 0;
+    display: inline-block;
+    box-shadow: 4px 4px 0px #e60012;
+}
+.footer-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-style: italic;
+    transition: all 0.15s ease;
+    padding: 2px 6px;
+}
+.footer-nav a:hover{
+    background-color: #000000;
+    color: #ffffff;
+    transform: skewX(-10deg);
+}
+.footer-socials{
+    display: flex;
+    gap: 15px;
+}
+.footer-socials a {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 18px;
+    font-weight: 900;
+    font-style: italic;
+    transform: skewX(-15deg);
+    border: 2px solid #e60012;
+    transition: all 0.2s ease;
+}
+.footer-socials a:hover{
+    background-color: #e60012;
+    border-color: #000000;
+    box-shadow: 4px 4px 0px #000000;
+    transform: skewX(-15deg) scale(1.05);
+}
+.copyright{
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    border-top: 2px dashed;
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
+    color: #333333;
 }
