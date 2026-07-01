@@ -1,8 +1,8 @@
 // Skill text blurbs
 const skillDescriptions = {
-  html: "The architectural foundation of my web interfaces, learned through Nextech.",
+  html: "The foundation of my web interfaces, learned through Nextech.",
   css: "Utilized to stylise layouts, learned through Nextech.",
-  js: "The engine driving my front-end interactive features, learned through Nextech.",
+  js: "Powering interactive buttons, learned through Nextech.",
   cpp: "Certified Entry-Level Programmer, earned by passing the CPE from the C++ Institue.",
 };
 
@@ -26,8 +26,5 @@ skillCards.forEach((card) => {
 
     // Injects the skill description
     blurbText.textContent = selectedDescription;
-
-    // Adds the is-active class to reveal descriptions
-    blurbPanel.classList.add("is-active");
   });
 });
